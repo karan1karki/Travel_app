@@ -7,7 +7,7 @@ st.title("🌿 GreenPath Nepal")
 st.markdown("**Travel Nepal beautifully, leave it even more beautiful**  \nनेपाल घुमौँ सुन्दर तरिकाले, छोडौँ अझ सुन्दर बनाएर।")
 
 # --- API Key Setup ---
-api_key = "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"
+api_key = os.getenv("OPENAI_API_KEY")
 if not api_key:
     st.warning("⚠️ Please set your OpenAI API key in the environment variable `OPENAI_API_KEY`")
     api_key = st.text_input("Enter your OpenAI API key:", type="password")
